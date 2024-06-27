@@ -10,9 +10,38 @@ main {
 }
 
 #sobre {
-    background-color: aqua;
+    background-color: #E9E9E9;
     height: 633px;
+    display: flex;
 }
+    .titulo-inicial{
+         font-size: 48px;
+         font-family: Barlow;
+        color-scheme: #121212;
+ }
+   .paragrafo-grande{
+        text-align: center;
+        font-size: 16px;
+        font-family: Inter;
+        color-scheme: #000;
+        padding: 5px;
+        display: inline-block; 
+ }
+    .porcentagem{
+        font-family: Barlow;
+        display: flex; 
+        margin-right: 100px;
+}
+    .anos-atendidos{
+        font-family: Barlow;
+        display: flex;
+        margin-right: 100px;
+}
+    .clintes-atendidos{
+        font-family: Barlow;
+        display: flex; 
+        margin-right: 100px;
+    }
 
 #precos {
     background-color: red;
