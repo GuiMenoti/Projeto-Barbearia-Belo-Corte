@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,9 +8,96 @@
 }
 
 main {
-    background-color: blue;
-    height: 100vh;
+   background-image: url(./img/bg-image.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   padding: 20px;
 }
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.nav-add {
+  text-decoration: none;
+  color: #977656 ;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+
+}
+
+.nav-desable {
+    color: #F2DAC2;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+.btn-cntt {
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.title-barber {
+    font-family: "Karantina", system-ui;
+    color: #F2DAC2;
+    font-size: 64px;
+    word-spacing: 2px;
+    letter-spacing: 5px;
+    
+}
+
+.padding-tittle {
+    padding: 30px;
+    margin-top: 40px;
+
+}
+
+.paragrafo-barber {
+    color: #896C4F;
+    font-size: 40px;
+    font-family: "Karantina", system-ui;
+}
+
+.paragrafo1-barber {
+    color: #F2DAC2;
+    font-size: 16px;
+}
+
+
+.btns {
+    margin-top: 30px;
+    gap: 20px;
+    display: flex;
+  
+}
+
+.saiba-mais {
+    width: 100px;
+    height: 55px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    background-color: #977656;
+
+}
+
+.servicos {
+    width: 100px;
+    height: 55px;
+    border: 1px solid #977656;
+    color: #977656;
+    background-color: transparent;
+    font-size: 12px;
+}
+
 
 #sobre {
     background-color: #E9E9E9;
