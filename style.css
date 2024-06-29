@@ -220,8 +220,8 @@ main {
         font-weight:  800;
     }
     .box-imagem{
-        width: 545px;
-        height: 363px;
+        width: 650px;
+        height: 410px;
         border-radius: 5px;
     }
     .imagem-box{
@@ -256,6 +256,11 @@ main {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding-right: 10%;
+    }
+
+    .container-imagem {
+        padding-left: 10%;
     }
     
 
