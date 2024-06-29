@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -9,11 +10,11 @@
 }
 
 main {
-   background-image: url(./img/bg-image.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 100vh;
-   padding: 20px;
+    background-image: url(./img/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
 }
 
 .logo {
@@ -22,10 +23,10 @@ main {
 }
 
 .nav-add {
-  text-decoration: none;
-  color: #977656 ;
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
+    text-decoration: none;
+    color: #977656;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
 
 }
 
@@ -52,7 +53,7 @@ main {
     font-size: 64px;
     word-spacing: 2px;
     letter-spacing: 5px;
-    
+
 }
 
 .padding-tittle {
@@ -77,7 +78,7 @@ main {
     margin-top: 30px;
     gap: 20px;
     display: flex;
-  
+
 }
 
 .saiba-mais {
@@ -149,9 +150,49 @@ main {
     }
 
 #precos {
-    background-color: red;
+    background-image: url(./img/Imagem2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    color: white;
     height: 100vh;
+    font-family: "Barlow", sans-serif;
 }
+
+.container-service {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.service-content {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+.title-service-custom {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.container-service-global {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.title-service-content {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.link-service {
+    color: white;
+}
+
+
 
 #galeria {
     background-color: #F5F5F5;
@@ -247,11 +288,58 @@ main {
     text-align: center;
 }
 #info {
-    background-color: green;
+   background-image: url(./img/bvarbe.png);
+   background-repeat: no-repeat;
+   background-size: cover;
     height: 640px;
+    padding: 50px;
+
+    
+}
+
+.title-info {
+    color: white;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.container-info-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  gap: 200px;
+}
+
+.container-global-info {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.bord {
+    background-color: #E9E9E9;
+    width: 100%;
 }
 
 footer {
-    background-color: black;
+    background-color: #1D1D1D;
     height: 59px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-name {
+   
+    color: white;
+    margin: 0;
+   
 }
