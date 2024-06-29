@@ -17,11 +17,11 @@
             <img class="logo" src="./img/barber logo.png" alt="Imagem Barbearia">
             <ul class="nav gap-4">
                 <li class="nav-item"><a class="nav-add" href="">INICIO</a></li>
-                <li class="nav-item"><a class="nav-desable" href="">SOBRE</a></li>
-                <li class="nav-item"><a class="nav-desable" href="">SERVIÇOS</a></li>
-                <li class="nav-item"><a class="nav-desable" href="">IMAGENS</a></li>
-                <li class="nav-item"><a class="nav-desable" href="">LOCALIZAÇÃO</a></li>
-                <button type="button" class="btn-cntt">CONTATOS</button>
+                <li class="nav-item"><a class="nav-desable" href="#sobre">SOBRE</a></li>
+                <li class="nav-item"><a class="nav-desable" href="#precos">SERVIÇOS</a></li>
+                <li class="nav-item"><a class="nav-desable" href="#galeria">IMAGENS</a></li>
+                <li class="nav-item"><a class="nav-desable" href="#localizacao">LOCALIZAÇÃO</a></li>
+                <a class="btn-cntt" href="#info">CONTATOS</a>
             </ul>
         </div>
 
@@ -32,8 +32,8 @@
                 <p class="paragrafo1-barber">Na Barbearia Belo Corte, somos especializados em cortes masculinos <br>
                     que atendem desde os estilos clássicos até os mais modernos.</p>
                 <div class="btns">
-                    <button class="saiba-mais">SAIBA MAIS</button>
-                    <button class="servicos">SERVIÇOS</button>
+                    <button class="saiba-mais"> <a class="text-saiba-mais" href="#sobre">SAIBA MAIS</a></button>
+                    <button class="servicos"><a class="text-servicos" href="#precos">SERVIÇOS</a></button>
                 </div>
             </div>
         </div>
@@ -244,7 +244,16 @@
 <p class="footer-name">Copyright @2024, Todos os direitos reservados</p>
     </footer>
 
+
     <!-- final -->
+    <a href="https://api.whatsapp.com/send?phone=5511981976824&text=Ol%C3%A1,%20Vim%20pelo%20site%20da%20barbearia%20%F0%9F%92%88BELO%20CORTE%20%F0%9F%92%88%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es!%0A"
+    class="btn-whatsapp"
+    target="_blank"
+    >
+     <img src="./img/whatsaapp.svg" alt="Botão whatssapp">
+     <span class="tooltip-text">Entre em contato</span>
+    </a>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
