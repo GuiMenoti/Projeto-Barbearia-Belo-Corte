@@ -211,6 +211,11 @@ main {
         display: flex; 
         gap: 30px;
     }
+    .box-geral-img{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
     
 
 #localizacao {
@@ -233,13 +238,12 @@ main {
     font-weight:  800;
 }
 .text-loc{
-
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
-.localizacao-link{
-    width: 1450;
-    height: 466;
+.edit-loc{
+    width: 100%;
+    height: 466px;
     text-align: center;
 }
 #info {
