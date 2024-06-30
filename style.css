@@ -680,7 +680,7 @@ justify-content: center;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 670px) {
     .btn-cntt, .btns, .saiba-mais, .servicos {
         font-size: 12px;
     }
@@ -907,4 +907,47 @@ justify-content: center;
     transform: rotate(-135deg);
     top: -7px;
   }
+}
+
+
+
+
+
+.image-strip {
+    overflow: hidden; /* Oculta a parte das imagens que está fora da faixa visível */
+    position: relative; /* Garante que o container seja o ponto de referência para a animação */
+    height: 120px; /* Ajuste a altura da faixa conforme necessário */
+}
+
+.image-strip-inner {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: scroll 100s linear infinite; /* Define a animação de rolagem contínua */
+}
+
+.image-strip img {
+    height: 100%; /* Ajusta a altura das imagens para se ajustar à faixa */
+    margin: 0 10px; /* Espaçamento entre as imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
+}
+
+/* Animação de Rolagem */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Move a faixa de imagens para a esquerda */
+    }
+}
+
+/* Responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+    .image-strip {
+        height: 100px; /* Ajusta a altura da faixa em telas menores */
+    }
+    .image-strip img {
+        height: 100px; /* Reduz a altura das imagens em telas menores */
+    }
 }
