@@ -785,7 +785,7 @@ justify-content: center;
   transition: 0.3s;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 788px) {
   .hamburger {
     display: block;
     z-index: 1;
@@ -794,13 +794,29 @@ justify-content: center;
   .title-barber {
     width: 100vw;
     font-size: 45px;
+
     
   }
 
   main {
     padding: 5px;
     margin: 0;
+  
   }
+
+  .modal-dialog {
+  width: 10px;
+    margin: 1rem;
+}
+
+.modal-content {
+  display: block;
+}
+
+.modal-content img {
+    border-radius: 0.2rem;
+    width: 300px;
+}
 
   .paragrafo-barber{
  font-size: 33px;
