@@ -310,11 +310,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-right: 10%;
+   padding: 10px;
 }
 
 .container-imagem {
-    padding-left: 10%;
+    padding: 10px;
 }
 
 
@@ -353,9 +353,7 @@ main {
 }
 
 #info {
-    background-image: url(./img/bvarbe.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: #000;
     height: 640px;
     padding: 50px;
 
@@ -377,7 +375,7 @@ main {
 }
 
 .container-global-info {
-    gap: 50px;
+    gap: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -385,7 +383,27 @@ main {
 .card-info {
     background-color: white;
     padding: 30px;
+    height: 300px;
+    width: 400px;
     border-radius: 10px;
+   
+}
+
+.card-end-cont{
+    text-align: center;
+}
+
+.container-fale {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.card-info-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .bord {
@@ -443,4 +461,157 @@ footer {
 .btn-whatsapp:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
+}
+
+
+.modal-header {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .btn-cntt, .btns, .saiba-mais, .servicos {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .title-barber {
+        font-size: 48px;
+    }
+
+    .paragrafo-barber {
+        font-size: 24px;
+    }
+
+    .paragrafo1-barber {
+        font-size: 14px;
+    }
+
+    .container-global, .container-text, .container-sobre, .container-box, .container-service, .service-content, .container-service-global, .container-geral, .conteiner-img2, .container-img3, .box-geral-img, .container-box-geral, .container-loc, .container-info-card, .container-global-info, .container-fale, .card-info-cont {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imagem-barba, .box-imagem, .imagem-box, .imagem-box2, .imagem-box3, .imagem-box4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-service-custom {
+        font-size: 18px;
+    }
+
+    .titulo-inicial {
+        font-size: 32px;
+    }
+
+    .paragrafo-grande {
+        width: 100%;
+    }
+
+    .container-fale, .card-info-cont {
+        font-size: 14px;
+    }
+
+    #precos, #sobre, #galeria, #localizacao, #info {
+        padding: 20px;
+        height: auto;
+    }
+
+    .btn-whatsapp {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .btn-whatsapp img {
+        max-width: 40px;
+    }
+
+    footer {
+        height: 50px;
+    }
+
+    .footer-name {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-cntt, .btns, .saiba-mais, .servicos {
+        font-size: 12px;
+    }
+
+    .title-barber {
+        font-size: 36px;
+    }
+
+    .paragrafo-barber {
+        font-size: 20px;
+    }
+
+    .paragrafo1-barber {
+        font-size: 12px;
+    }
+
+    .container-global {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+ .container-text, .container-sobre, .container-box, .container-service, .service-content, .container-service-global, .container-geral, .conteiner-img2, .container-img3, .box-geral-img, .container-box-geral, .container-loc, .container-info-card, .container-global-info, .container-fale, .card-info-cont {
+        gap: 10px;
+    }
+
+    .imagem-barba, .box-imagem, .imagem-box, .imagem-box2, .imagem-box3, .imagem-box4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-service-custom {
+        font-size: 16px;
+    }
+
+    .titulo-inicial {
+        font-size: 24px;
+    }
+
+    .paragrafo-grande {
+        width: 100%;
+    }
+
+    .container-fale, .card-info-cont {
+        font-size: 12px;
+    }
+
+    #precos, #sobre, #galeria, #localizacao, #info {
+        padding: 10px;
+        height: auto;
+    }
+
+    .btn-whatsapp {
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .btn-whatsapp img {
+        max-width: 30px;
+    }
+
+    footer {
+        height: 40px;
+    }
+
+    .footer-name {
+        font-size: 10px;
+    }
+
+    .container-imagem {
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
 }
