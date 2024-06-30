@@ -16,9 +16,13 @@
 <body>
     <!-- Tela inicial -->
     <main>
-        <div class="d-flex justify-content-between align-items-center ">
+        <div class="d-flex justify-content-between align-items-center header-container">
             <img class="logo" src="./img/barber logo.png" alt="Imagem Barbearia">
-            <ul class="nav gap-4">
+    
+            <nav class="nav">
+                <button class="hamburger"> <i style=" width: 50px; height: 50px; color: white;" class="fas fa-bars"></i></button>
+    
+            <ul class="nav gap-4 nav-list">
                 <li class="nav-item"><a class="nav-add" href="">INICIO</a></li>
                 <li class="nav-item"><a class="nav-desable" href="#sobre">SOBRE</a></li>
                 <li class="nav-item"><a class="nav-desable" href="#precos">SERVIÇOS</a></li>
@@ -26,8 +30,9 @@
                 <li class="nav-item"><a class="nav-desable" href="#localizacao">LOCALIZAÇÃO</a></li>
                 <a class="btn-cntt" href="#info">CONTATOS</a>
             </ul>
+        </nav>
         </div>
-
+    
         <div>
             <div class="padding-tittle">
                 <h1 class="title-barber">BARBEARIA BELO CORTE</h1>
@@ -61,18 +66,18 @@
                 </div>
                 <div class="container-box">
                     <div>
-                        <h1 class="text-number">99 <span style="color: #dec7a6">%</span></h1>
+                        <h1 id="count1" class="text-number">99 <span style="color: #dec7a6">%</span></h1>
 
                         <p class="texto">CLINTES <br> SATISFEITOS </p>
                     </div>
 
                     <div>
-                        <h1 class="text-number">4 <span style="color: #dec7a6;">+</span></h1>
+                        <h1 id="count2" class="text-number">4 <span style="color: #dec7a6;">+</span></h1>
                         <p class="texto">ANOS DE <br> EXPERIÊNCIA</p>
                     </div>
 
                     <div>
-                        <h1 class="text-number">2000 <span style="color: #dec7a6;">+</span> </h1>
+                        <h1 id="count3" class="text-number">2000 <span style="color: #dec7a6;">+</span> </h1>
                         <p class="texto">CLINTES <br> ATENDIDOS</p>
                     </div>
                 </div>
@@ -123,10 +128,6 @@
                     <h1 class="title-service-custom">OUTROS SERVIÇOS DA BARBEARIA</h1>
                     <a class="link-service" href="#" data-toggle="modal" data-target="#exampleModal">CLIQUE AQUI</a>
                 </div>
-                <div style="text-align: end;">
-                    <img style="width: 10%;" src="./img/CABELOS.png" alt="">
-                </div>
-
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -159,54 +160,21 @@
                     GALERIA
                 </h1>
             </div>
-            <div class="container-box-geral">
-                <div class="container-imagem">
-                    <!-- <img class="box-imagem" src="./img/barber-maquina.jpg" alt="Imagem-corte-barba"> -->
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block  box-imagem"
-                                    src="./img/cliente-fazendo-o-corte-de-cabelo-em-um-salao-de-barbearia.jpg"
-                                    alt="Primeiro Slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block box-imagem" src="./img/barber-maquina.jpg" alt="Segundo Slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block  box-imagem"
-                                    src="./img/cliente-fazendo-o-corte-de-cabelo-em-um-salao-de-barbearia.jpg"
-                                    alt="Terceiro Slide">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-                        </a>
-                    </div>
+            <div id="photos" class="photo-section active">
+                <div class="photo-column">
+                    <img src="./img/7e02f6ec-67b3-48bb-be17-106d1320f96d.jpg" alt="Imagem 1" style="max-height: 350px;">
+                    <img src="./img/aea2dc97-a969-4d6b-a831-d6f46f22316d.jpg" alt="Imagem 2" style="max-height: 300px;">
                 </div>
-                <div class="box-geral-img">
-                    <div class=" conteiner-img2">
-                        <img class="imagem-box"
-                            src="./img/cliente-fazendo-o-corte-de-cabelo-em-um-salao-de-barbearia.jpg" alt="">
-                        <img class="imagem-box2" src="./img/Imagem2.jpg" alt="">
-                        <img class="imagem-box4" src="./img/Imagem2.jpg" alt="">
-
-                    </div>
-                    <div class="container-img3">
-                        <img class="imagem-box3"
-                            src="./img/cliente-fazendo-o-corte-de-cabelo-em-um-salao-de-barbearia.jpg" alt="">
-                        <img class="imagem-box4" src="./img/Imagem2.jpg" alt="">
-                        <img class="imagem-box4" src="./img/Imagem2.jpg" alt="">
-
-                    </div>
+                <div class="photo-column">
+                    <img src="./img/efa12721-aace-44d4-ba08-cd9fd5badd6b.jpg" alt="Imagem 4" style="max-height: 300px;">
+                    <img src="./img/eeaca702-aec7-4dc7-8c9d-025964faaabc.jpg" alt="Imagem 5" style="max-height: 340px;">
+                </div>
+                <div class="photo-column">
+                    <img src="./img/imagem7.jpg" alt="Imagem 7" style="height: 240px;">
+                    <img src="./img/img-8.jpg" alt="Imagem 8" style="height: 410px;">
                 </div>
             </div>
         </div>
-
     </section>
     <!-- final galeria -->
 
@@ -234,62 +202,43 @@
     <section id="info">
         <div class="container-global-info">
             <div class="title-info">
-                <h1>OPA, QUE TAL UM <span style="color: red;">BELO</span><span style="color: #293CA1;">
+                <h1>OPA, QUE TAL UM <span class="highlight-red">BELO</span><span class="highlight-blue">
                         CORTE</span><br>NESSE CABELO?</h1>
             </div>
             <div class="container-info-card">
                 <div class="card-info">
-                    <div class="card-info-cont">
-                    <h1 style=" text-align: center;">FALE CONOSCO</h1>
+                    <h2>FALE CONOSCO</h2>
                     <div class="container-fale">
-                    <div>
-                        <i class="fa-brands fa-square-whatsapp" style="color: #04f000;"></i>
-                        <a style="text-decoration: none; color: black;" target="_blank" href="https://api.whatsapp.com/send?phone=5511981976824&text=Ol%C3%A1,%20Vim%20pelo%20site%20da%20barbearia%20%F0%9F%92%88BELO%20CORTE%20%F0%9F%92%88%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es!%0A">(11) 981976824</a>
+                        <div class="info-item">
+                            <i class="fa-brands fa-square-whatsapp icon-whatsapp"></i>
+                            <a href="https://api.whatsapp.com/send?phone=5511981976824&text=Ol%C3%A1,%20Vim%20pelo%20site%20da%20barbearia%20%F0%9F%92%88BELO%20CORTE%20%F0%9F%92%88%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es!%0A" target="_blank" class="info-link">(11) 981976824</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-brands fa-square-instagram icon-instagram"></i>
+                            <a href="https://instagram.com/barbearia_belocorte" target="_blank" class="info-link">@barbearia_belocorte</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope icon-envelope"></i>
+                            <a href="mailto:barbeariacelocorte2@gmail.com" class="info-link">barbeariacelocorte2@gmail.com</a>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-brands fa-square-instagram" style="color: #a32481;"></i>
-                          <a>@barbearia_belocorte</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-envelope" style="color: #174fb0;"></i>
-                        <a>barbeariacelocorte2@gmail.com</a>
-                    </div>
+                </div>
+                <div class="card-info">
+                    <h2>HORÁRIOS</h2>
+                    <p>Terça a Sexta - 09h a 20h <br>
+                    Sábado - 09h a 20h <br>
+                    Segunda e Domingo - Fechado
+                    </p>
+                </div>
+                <div class="card-info">
+                    <h2>ENDEREÇO</h2>
+                    <p>R. Silvio Brant Correia, 211 - Vila Ema<br>
+                    São Paulo - SP, 03279-170
+                    </p>
+                    <p>Próximo à estação São Lucas do metrô</p>
                 </div>
             </div>
-                </div>
-           
-                <div class="card-info">
-                    <div>
-                    <h1 style=" text-align: center;">HORÁRIOS</h1>
-                </div>
-                    <div style=" text-align: center;">
-                       <p>Terça a Sexta - 09h a 20h <br>
-                        Sábado - 09h a 20h <br>
-                        ​Segunda e Domingo - Fechado
-                        </p>
-                    </div>         
-                </div>
-                
-                <div class="card-info">
-                    <div>
-                    <h1 style=" text-align: center;">ENDEREÇO</h1>
-                </div>
-                    <div class="card-end-cont">
-                       <p>R. Silvio Brant Correia, 211 - Vila Ema
-                        São Paulo - SP, 03279-170
-                        </p>
-                        <p>
-                            Próximo à estação são Lucas do metrô
-                        </p>
-                    </div>         
-                </div>
-
-
-            </div>
-
-
         </div>
-
     </section>
     <!-- final info -->
 
@@ -306,7 +255,8 @@
         <img src="./img/whatsaapp.svg" alt="Botão whatssapp">
         <span class="tooltip-text">Entre em contato</span>
     </a>
-<script></script>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.8/dist/countUp.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

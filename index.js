@@ -24,10 +24,26 @@ function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
 
-// Fechar o modal ao clicar fora dele
+
 window.onclick = function(event) {
     const modal = document.getElementById("myModal");
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    const navItems = document.querySelectorAll('.nav-item a');
+
+    hamburger.addEventListener('click', function () {
+        nav.classList.toggle('active');
+    });
+
+    // Fechar o menu ao clicar em um item
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            nav.classList.remove('active');
+        });
+    });
+});
