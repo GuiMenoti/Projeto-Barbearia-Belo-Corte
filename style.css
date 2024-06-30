@@ -791,6 +791,42 @@ justify-content: center;
     z-index: 1;
   }
 
+  .title-barber {
+    width: 100vw;
+    font-size: 45px;
+    
+  }
+
+  main {
+    padding: 5px;
+    margin: 0;
+  }
+
+  .paragrafo-barber{
+ font-size: 33px;
+  }
+
+  .paragrafo1-barber {
+    font-size: 18px;
+  }
+
+  .saiba-mais {
+    height: 50px;
+  }
+
+  #sobre {
+    padding: 20px;
+  }
+
+
+  #precos {
+    padding: 30px;
+  }
+
+  #localizacao {
+    padding: 20px;
+  }
+
   .nav-list {
     position: fixed;
     top: 0;
