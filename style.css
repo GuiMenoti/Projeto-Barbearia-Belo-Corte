@@ -7,6 +7,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    max-width: 100%;
+}
+body {
+    overflow-x: hidden;
+   
 }
 
 main {
@@ -15,6 +20,7 @@ main {
     background-size: cover;
     height: 100vh;
     padding: 35px;
+    
 }
 
 
@@ -335,13 +341,16 @@ main {
 .video-section {
     display: none;
 }
+.container {
+    max-width: 100%;
+}
 
 .active {
     display: grid;
 }
 
 .photo-section {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     margin-top: 20px;
     overflow: hidden;
@@ -881,14 +890,9 @@ footer {
 
 
     .btn-whatsapp img {
-        max-width: 50px;
+        max-width: 53px;
     }
-    .btn-whatsapp {
-        position: fixed;
-        bottom: 30px;
-        right: 47px;
-        z-index: 101;
-    }
+   
     footer {
         height: 40px;
     }
