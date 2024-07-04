@@ -47,3 +47,39 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the page loads, show the modal
+window.onload = function() {
+ 
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+   let disabledTotal = document.getElementById("container-total")
+    modal.style.display = "none";
+    disabledTotal.classList.remove("disabled-total")
+
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        let disabledTotal = document.getElementById("container-total")
+        modal.style.display = "none";
+        disabledTotal.classList.remove("disabled-total")
+    }
+}
+
+function closeavali() {
+    let disabledTotal = document.getElementById("container-total")
+    modal.style.display = "none";
+    disabledTotal.classList.remove("disabled-total")
+}
