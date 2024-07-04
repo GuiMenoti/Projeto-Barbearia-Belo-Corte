@@ -654,7 +654,6 @@ footer {
     position: absolute;
     width: 120px;
     top: 8px;
-    left: -144px;
     padding: 4px;
     border-radius: 8px;
     text-align: center;
@@ -880,15 +879,16 @@ footer {
         height: auto;
     }
 
-    .btn-whatsapp {
-        bottom: 5px;
-       
-    }
 
     .btn-whatsapp img {
-        max-width: 30px;
+        max-width: 50px;
     }
-
+    .btn-whatsapp {
+        position: fixed;
+        bottom: 30px;
+        right: 60px;
+        z-index: 101;
+    }
     footer {
         height: 40px;
     }
